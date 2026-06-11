@@ -183,6 +183,26 @@
   .faq details p{ margin:.85rem 0 0; color:var(--cream-soft); font-size:.97rem; }
   .faq a{ border-bottom:1px solid var(--line); }
   .faq a:hover{ border-color:var(--gold); }
+
+  .card__addr{
+    font-size:.84rem; font-weight:700; letter-spacing:.01em;
+    color:var(--gold); margin:.1rem 0 1.5rem;
+  }
+
+  /* ---------- map / visit ---------- */
+  .map{ text-align:center; max-width:46rem; margin:0 auto; padding:0 0 clamp(2.5rem,6vw,4rem); }
+  .map h2{ font-family:var(--serif); font-weight:600; color:#fff; font-size:clamp(1.4rem,2.6vw,1.85rem); margin:0 0 .45rem; }
+  .map .addr{ color:var(--gold); font-weight:700; letter-spacing:.02em; margin:0 0 1.25rem; }
+  .map__frame{
+    position:relative; border-radius:14px; overflow:hidden;
+    border:1px solid var(--line); box-shadow:0 18px 44px -28px rgba(0,0,0,.8);
+  }
+  .map__frame iframe{ display:block; width:100%; height:340px; border:0; }
+  .map__link{ margin-top:1rem; }
+  .map__link a{
+    font-weight:700; text-transform:uppercase; letter-spacing:.14em;
+    font-size:.78rem; color:var(--gold); display:inline-flex; align-items:center; gap:.4rem;
+  }
 </style>
 
 <script type="application/ld+json">
@@ -207,10 +227,18 @@
           "description": "Guided historic walking tours through the streets of Salem, Massachusetts."
         },
         {
-          "@type": "Organization",
+          "@type": ["Organization", "Store"],
           "name": "Witch City Broom Co.",
           "url": "https://witchcitybroomco.com/",
-          "description": "Hands-on broom-making workshops and craft kits in Salem, Massachusetts."
+          "description": "Brick-and-mortar retail shop offering hands-on broom-making workshops and take-home craft kits in Salem, Massachusetts.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "246 Essex St",
+            "addressLocality": "Salem",
+            "addressRegion": "MA",
+            "postalCode": "01970",
+            "addressCountry": "US"
+          }
         }
       ]
     },
@@ -237,12 +265,17 @@
         {
           "@type": "Question",
           "name": "What experiences does Witch City Experiences offer?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Two: guided historic walking tours of Salem through Witch City Walking Tours, and hands-on broom-making workshops and take-home craft kits through Witch City Broom Co." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Two: guided historic walking tours of Salem through Witch City Walking Tours, and broom-making through Witch City Broom Co., which also runs a full brick-and-mortar retail shop at 246 Essex St, Salem, MA, offering hands-on workshops and take-home craft kits." }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Witch City Broom Co. shop located?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Witch City Broom Co. is a brick-and-mortar shop at 246 Essex St, Salem, MA 01970, in downtown Salem." }
         },
         {
           "@type": "Question",
           "name": "How do I book a walking tour or a broom-making workshop?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Book directly with each brand: visit witchcitywalkingtours.com for walking tours and witchcitybroomco.com for broom-making workshops and kits." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Book directly with each brand: visit witchcitywalkingtours.com for walking tours and witchcitybroomco.com for broom-making, or stop by the Broom Co. shop at 246 Essex St, Salem." }
         }
       ]
     }
@@ -278,14 +311,27 @@
             <img src="assets/wcbc-primary.png" alt="Witch City Broom Co. logo" />
           </span>
           <h2>Witch City Broom Co.</h2>
-          <p>Hands-on broom-making workshops and craft kits — make and take home your own keepsake broom in the heart of Witch City.</p>
+          <p>A full brick-and-mortar retail shop plus hands-on broom-making workshops and take-home craft kits — craft your own keepsake broom in the heart of Salem.</p>
+          <p class="card__addr">246 Essex St, Salem, MA 01970</p>
           <span class="visit">Visit site <span class="arr">→</span></span>
         </a>
 
       </div>
 
       <section class="about">
-        <p>Witch City Experiences is a Salem, Massachusetts company offering immersive ways to experience the history and craft of America's most famous Witch City. Through <strong>Witch City Walking Tours</strong> and <strong>Witch City Broom Co.</strong>, visitors can explore Salem's historic, haunted streets on a guided tour — or craft and take home their own keepsake broom in a hands-on workshop.</p>
+        <p>Witch City Experiences is a Salem, Massachusetts company offering immersive ways to experience the history and craft of America's most famous Witch City. Through <strong>Witch City Walking Tours</strong> and <strong>Witch City Broom Co.</strong>, visitors can explore Salem's historic, haunted streets on a guided tour — or visit the Broom Co. shop at 246 Essex Street to craft and take home their own keepsake broom in a hands-on workshop.</p>
+      </section>
+
+      <section class="map" aria-label="Witch City Broom Co. shop location">
+        <h2>Visit the Broom Co. Shop</h2>
+        <p class="addr">246 Essex St, Salem, MA 01970</p>
+        <div class="map__frame">
+          <iframe
+            title="Map showing Witch City Broom Co. at 246 Essex St, Salem, MA 01970"
+            src="https://www.google.com/maps?q=246%20Essex%20St%2C%20Salem%2C%20MA%2001970&z=16&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <p class="map__link"><a href="https://www.google.com/maps/search/?api=1&amp;query=246%20Essex%20St%2C%20Salem%2C%20MA%2001970" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a></p>
       </section>
 
       <section class="faq" aria-label="Frequently asked questions">
@@ -300,11 +346,15 @@
         </details>
         <details>
           <summary>What experiences do you offer?</summary>
-          <p>Two: guided historic walking tours of Salem through Witch City Walking Tours, and hands-on broom-making workshops and take-home craft kits through Witch City Broom Co.</p>
+          <p>Two: guided historic walking tours of Salem through Witch City Walking Tours, and broom-making through Witch City Broom Co. — which also runs a full brick-and-mortar retail shop at 246 Essex St, Salem, MA, offering hands-on workshops and take-home craft kits.</p>
+        </details>
+        <details>
+          <summary>Where is the Witch City Broom Co. shop located?</summary>
+          <p>Witch City Broom Co. is a brick-and-mortar shop at 246 Essex St, Salem, MA 01970, in downtown Salem.</p>
         </details>
         <details>
           <summary>How do I book a walking tour or a broom-making workshop?</summary>
-          <p>Book directly with each brand — visit <a href="https://witchcitywalkingtours.com/" target="_blank" rel="noopener noreferrer">witchcitywalkingtours.com</a> for walking tours and <a href="https://witchcitybroomco.com/" target="_blank" rel="noopener noreferrer">witchcitybroomco.com</a> for broom-making workshops and kits.</p>
+          <p>Book directly with each brand — visit <a href="https://witchcitywalkingtours.com/" target="_blank" rel="noopener noreferrer">witchcitywalkingtours.com</a> for walking tours and <a href="https://witchcitybroomco.com/" target="_blank" rel="noopener noreferrer">witchcitybroomco.com</a> for broom-making, or stop by the Broom Co. shop at 246 Essex St, Salem.</p>
         </details>
       </section>
     </div>
