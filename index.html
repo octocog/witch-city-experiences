@@ -3,15 +3,33 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Witch City Experiences — Salem, Massachusetts</title>
-<meta name="description" content="Witch City Experiences brings together two ways to discover Salem: Witch City Walking Tours and Witch City Broom Co." />
+<title>Witch City Experiences — Salem, MA Tours &amp; Broom-Making</title>
+<meta name="description" content="Witch City Experiences is a Salem, Massachusetts company offering two ways to experience the Witch City: guided historic walking tours from Witch City Walking Tours and hands-on broom-making workshops from Witch City Broom Co." />
 <link rel="canonical" href="https://www.witchcityexperiences.com/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#14161e" />
 <link rel="icon" type="image/webp" href="assets/wcwt-stacked-white.webp" />
 
+<!-- Local / geo signals -->
+<meta name="geo.region" content="US-MA" />
+<meta name="geo.placename" content="Salem, Massachusetts" />
+<meta name="geo.position" content="42.5195;-70.8967" />
+<meta name="ICBM" content="42.5195, -70.8967" />
+
+<!-- Open Graph / Twitter -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Witch City Experiences — Salem, Massachusetts" />
-<meta property="og:description" content="Two ways to discover Salem: Witch City Walking Tours and Witch City Broom Co." />
+<meta property="og:site_name" content="Witch City Experiences" />
+<meta property="og:title" content="Witch City Experiences — Salem, MA Tours &amp; Broom-Making" />
+<meta property="og:description" content="Two ways to experience Salem, MA: guided historic walking tours and hands-on broom-making — home to Witch City Walking Tours and Witch City Broom Co." />
 <meta property="og:url" content="https://www.witchcityexperiences.com/" />
+<meta property="og:image" content="https://www.witchcityexperiences.com/assets/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Witch City Experiences — Salem, Massachusetts, parent of Witch City Walking Tours and Witch City Broom Co." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Witch City Experiences — Salem, MA Tours &amp; Broom-Making" />
+<meta name="twitter:description" content="Two ways to experience Salem, MA: guided historic walking tours and hands-on broom-making." />
+<meta name="twitter:image" content="https://www.witchcityexperiences.com/assets/og.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -140,7 +158,97 @@
   @media (prefers-reduced-motion: reduce){
     *{ transition:none !important; }
   }
+
+  /* ---------- about + faq ---------- */
+  .about{ text-align:center; padding:0 0 clamp(2rem,5vw,3.5rem); }
+  .about p{ max-width:46rem; margin:0 auto; color:var(--cream-soft); font-size:1.02rem; }
+  .faq{ padding:clamp(1rem,3vw,1.5rem) 0 clamp(3.5rem,8vw,5.5rem); max-width:46rem; margin:0 auto; }
+  .faq h2{
+    font-family:var(--serif); font-weight:600; color:#fff; text-align:center;
+    font-size:clamp(1.5rem,3vw,2rem); margin:0 0 1.75rem;
+  }
+  .faq details{
+    border:1px solid var(--line); border-radius:12px;
+    padding:1rem 1.25rem; margin-bottom:.85rem;
+    background:rgba(255,255,255,.02);
+  }
+  .faq details[open]{ border-color:var(--gold); }
+  .faq summary{
+    cursor:pointer; font-weight:700; color:var(--cream);
+    list-style:none; display:flex; justify-content:space-between; align-items:center; gap:1rem;
+  }
+  .faq summary::-webkit-details-marker{ display:none; }
+  .faq summary::after{ content:"+"; color:var(--gold); font-size:1.3rem; line-height:1; }
+  .faq details[open] summary::after{ content:"–"; }
+  .faq details p{ margin:.85rem 0 0; color:var(--cream-soft); font-size:.97rem; }
+  .faq a{ border-bottom:1px solid var(--line); }
+  .faq a:hover{ border-color:var(--gold); }
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.witchcityexperiences.com/#org",
+      "name": "Witch City Experiences",
+      "url": "https://www.witchcityexperiences.com/",
+      "logo": "https://www.witchcityexperiences.com/assets/og.png",
+      "image": "https://www.witchcityexperiences.com/assets/og.png",
+      "description": "Witch City Experiences is a Salem, Massachusetts company offering immersive ways to experience the history and craft of America's most famous Witch City, through Witch City Walking Tours and Witch City Broom Co.",
+      "areaServed": { "@type": "City", "name": "Salem", "containedInPlace": { "@type": "State", "name": "Massachusetts" } },
+      "address": { "@type": "PostalAddress", "addressLocality": "Salem", "addressRegion": "MA", "addressCountry": "US" },
+      "subOrganization": [
+        {
+          "@type": "Organization",
+          "name": "Witch City Walking Tours",
+          "url": "https://witchcitywalkingtours.com/",
+          "description": "Guided historic walking tours through the streets of Salem, Massachusetts."
+        },
+        {
+          "@type": "Organization",
+          "name": "Witch City Broom Co.",
+          "url": "https://witchcitybroomco.com/",
+          "description": "Hands-on broom-making workshops and craft kits in Salem, Massachusetts."
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.witchcityexperiences.com/#website",
+      "url": "https://www.witchcityexperiences.com/",
+      "name": "Witch City Experiences",
+      "publisher": { "@id": "https://www.witchcityexperiences.com/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Witch City Experiences?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Witch City Experiences is a Salem, Massachusetts company and the parent of two local brands: Witch City Walking Tours and Witch City Broom Co. Together they offer guided historic walking tours and hands-on broom-making in the heart of Salem." }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Witch City Experiences located?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Witch City Experiences and its brands are based in Salem, Massachusetts." }
+        },
+        {
+          "@type": "Question",
+          "name": "What experiences does Witch City Experiences offer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Two: guided historic walking tours of Salem through Witch City Walking Tours, and hands-on broom-making workshops and take-home craft kits through Witch City Broom Co." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book a walking tour or a broom-making workshop?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Book directly with each brand: visit witchcitywalkingtours.com for walking tours and witchcitybroomco.com for broom-making workshops and kits." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header>
@@ -175,6 +283,30 @@
         </a>
 
       </div>
+
+      <section class="about">
+        <p>Witch City Experiences is a Salem, Massachusetts company offering immersive ways to experience the history and craft of America's most famous Witch City. Through <strong>Witch City Walking Tours</strong> and <strong>Witch City Broom Co.</strong>, visitors can explore Salem's historic, haunted streets on a guided tour — or craft and take home their own keepsake broom in a hands-on workshop.</p>
+      </section>
+
+      <section class="faq" aria-label="Frequently asked questions">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>What is Witch City Experiences?</summary>
+          <p>Witch City Experiences is a Salem, Massachusetts company and the parent of two local brands: Witch City Walking Tours and Witch City Broom Co. Together they offer guided historic walking tours and hands-on broom-making in the heart of Salem.</p>
+        </details>
+        <details>
+          <summary>Where is Witch City Experiences located?</summary>
+          <p>Witch City Experiences and its brands are based in Salem, Massachusetts.</p>
+        </details>
+        <details>
+          <summary>What experiences do you offer?</summary>
+          <p>Two: guided historic walking tours of Salem through Witch City Walking Tours, and hands-on broom-making workshops and take-home craft kits through Witch City Broom Co.</p>
+        </details>
+        <details>
+          <summary>How do I book a walking tour or a broom-making workshop?</summary>
+          <p>Book directly with each brand — visit <a href="https://witchcitywalkingtours.com/" target="_blank" rel="noopener noreferrer">witchcitywalkingtours.com</a> for walking tours and <a href="https://witchcitybroomco.com/" target="_blank" rel="noopener noreferrer">witchcitybroomco.com</a> for broom-making workshops and kits.</p>
+        </details>
+      </section>
     </div>
   </main>
 

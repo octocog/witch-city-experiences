@@ -1,0 +1,13 @@
+# Witch City Experiences
+
+> Witch City Experiences is a Salem, Massachusetts company offering immersive ways to experience the history and craft of the Witch City. It is the parent company of two local brands.
+
+## Brands
+- [Witch City Walking Tours](https://witchcitywalkingtours.com/): Guided historic walking tours through the streets of Salem, Massachusetts.
+- [Witch City Broom Co.](https://witchcitybroomco.com/): Hands-on broom-making workshops and take-home craft kits in Salem, Massachusetts.
+
+## Location
+Salem, Massachusetts, United States.
+
+## Credit
+Designed and maintained by OctoCog Marketing & Design (https://octocog.com).
