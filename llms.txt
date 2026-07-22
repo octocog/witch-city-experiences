@@ -1,13 +1,14 @@
 # Witch City Experiences
 
-> Witch City Experiences is a Salem, Massachusetts company offering immersive ways to experience the history and craft of the Witch City. It is the parent company of two local brands.
+> Witch City Experiences is a Salem, Massachusetts company offering immersive ways to experience the history and craft of the Witch City. It is the parent company of three local experiences.
 
 ## Brands
 - [Witch City Walking Tours](https://witchcitywalkingtours.com/): Guided historic walking tours through the streets of Salem, Massachusetts.
-- [Witch City Broom Co.](https://witchcitybroomco.com/): A full brick-and-mortar retail shop at 246 Essex St, Salem, MA 01970, offering hands-on broom-making workshops and take-home craft kits.
+- [Witch City Broom Making Workshop](https://witchcitybroomco.com/pages/broom-making-workshop): Hands-on broom-making workshops at 32 Derby Square, Salem, MA 01970 — design and decorate your own custom souvenir broom with local instructors.
+- [Witch City Broom Co.](https://witchcitybroomco.com/): A brick-and-mortar retail shop at 246 Essex St, Salem, MA 01970, offering handcrafted brooms and take-home craft kits.
 
 ## Location
-Salem, Massachusetts, United States. Witch City Broom Co. retail shop: 246 Essex St, Salem, MA 01970.
+Salem, Massachusetts, United States. Broom Making Workshop: 32 Derby Square, Salem, MA 01970. Witch City Broom Co. retail shop: 246 Essex St, Salem, MA 01970.
 
 ## Credit
 Designed and maintained by OctoCog Marketing & Design (https://octocog.com).
